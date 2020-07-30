@@ -8,7 +8,7 @@ These techlabs serve as an introduction to Hugo. After finishing these labs you 
 
 1. [Quicktour / basic concepts](labs/01_quicktour.md)
 1. [Install the Hugo CLI](labs/02_cli.md)
-1. [First Steps in the lab environment](labs/03_first_steps.md)
+1. [First Steps](labs/03_first_steps.md)
 1. [Templates](labs/04_templates.md)
 
 
