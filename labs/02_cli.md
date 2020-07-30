@@ -10,7 +10,7 @@ As the client is written in Go, you can run the single binary on the following O
 
 The easiest way to install Hugo is by [downloading the binary from Github](https://github.com/gohugoio/hugo/releases) and moving it into `~/bin`. However there are also [other ways of installing Hugo](https://gohugo.io/getting-started/installing).
 
-## Set the the right file modes on Linux and MacOS
+### Set the the right file modes on Linux and MacOS
 
 If you downloaded the binary from Github, then make sure it is executable:
 
@@ -19,7 +19,7 @@ cd ~/bin
 chmod +x hugo
 ```
 
-## `hugo` in PATH variable
+### `hugo` in PATH variable
 
 In **Linux** and **Mac OS X** the directory `~/bin` should already be part of the PATH variable.
 In case `hugo` is placed in a different directory, you can change the PATH with the following command:
