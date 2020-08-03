@@ -2,15 +2,38 @@
 
 In the last lab we added some content. Hugo uses template files to render content (markdown) into HTML. Template files are a bridge between the content and presentation. Hugo doesn't provide any default templates, meaning that content is not rendered by default.
 
+The terms layout and template are used interchangeably. The directory is called `layouts`, but the layouts also contain template variables and functions.
+
+The goal of this lab is to render our content (e.g. `content/labs/01_quicktour.md`) to HTML.
+
 There are three types of templates: single, list, and partial. Each type takes a bit of content as input and transforms it based on the commands in the template.
 
-TODO: describe template lookup order
+In this lab we will be be focussing on the following templates:
+- Homepage
+- Section pages (list template)
+- Regular pages (single template)
 
-Layouts mainly contain HTML, but can also include variables and functions. This is called templating. All template variables and functions are accessible within `{{ }}`.
+A section page is a list of regular pages in a specific section. In our example (`content/labs/01_quicktour.md`) the section is `labs` and all files inside this directory are regular pages.
 
-In this lab we will get to know the most important variables and functions and how to use them.
+## Lookup order
+There are lookup rules for each page. That means that Hugo checks if specific layout exists. If it doesn't exist then Hugo searches for the next layout (in the lookup order). The first layout that exists will be used.
 
-The goal is to render our content (e.g. `content/labs/01_quicktour.md`) to HTML.
+The lookup order for the Homepage is (first file found will be used):
+
+- layouts/index.html
+- layouts/_default/list.html
+
+The lookup order for the labs section is:
+
+- layouts/labs/list.html
+- layouts/_default/list.html
+
+The lookup order for a regular page (in the labs section):
+
+- layouts/labs/single.html
+- layouts_default/single.html
+
+These lists have been shortened. To find out more about Hugo's lookup order, see the [official docs](https://gohugo.io/templates/lookup-order/)
 
 ## Basic Syntax
 
@@ -28,17 +51,40 @@ e.g. A section template has access to the section variables, but also page and s
 When editing the layouts you will mostly encounter [page variables](https://gohugo.io/variables/page/). The following is a small list of the most important ones:
 
 **.Content**
+
 the content itself, defined below the front matter.
 
 **.Title**
+
 the title for this page.
 
 **.Date**
+
 the date associated with the page; .Date pulls from the date field in a content’s front matter.
 
 **.Params**
+
 contains all other values defined in the front matter (e.g. `.Params.tags`).
 
+**.Permalink**
+
+the link to this page
+
+### Functions
+TODO
+
+## Exercise: list all the labs
+TODO
+
+## Exercise
+
+Create a layout (with template variables), that renders a single lab page.
+
+<details>
+  <summary>Solution</summary>
+
+  TODO
+</details>
 
 ---
 

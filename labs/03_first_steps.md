@@ -109,7 +109,7 @@ As you can see there is still no `index.html` file. The `css` and `js` directori
 
 ## Layouts
 
-Our goal is now to create an `index.html`. For this we need to create a layout in the `themes/mytheme/layouts` directory. There are lookup rules for each page. That means that Hugo checks if specific files exist in a certain order. The first file that exists will be used.
+Our goal is now to create an `index.html`. For this we need to create a layout in the `themes/mytheme/layouts` directory. There are lookup rules for each page. That means that Hugo checks if specific layouts exist in a certain order. The first layout that exists will be used.
 
 There are different lookup orders for every type of page:
  - Homepage
@@ -120,9 +120,6 @@ There are different lookup orders for every type of page:
 
 The lookup order for the Homepage is (first file found will be used):
  - layouts/index.html
- - layouts/home.html
- - layouts/_default/index.html
- - layouts/_default/home.html
  - layouts/_default/list.html
 
 This list is shortened. To find out more about Hugo's lookup order, see the [official docs](https://gohugo.io/templates/lookup-order/).
@@ -138,7 +135,7 @@ categories  css  index.html  index.xml  js  sitemap.xml  tags
 $ cat public/index.html
 homepage
 ```
-Now the `index.html` exists. As you may have noticed the layout file already existed before, but it was empty. So we can conclude that empty layouts do not get rendered.
+Now the `index.html` exists. As you may have noticed the layout file already existed before, but it was empty. So we can conclude that empty layouts do not get rendered. In lab 5 we will find out how these layouts work.
 
 In the next lab we will learn how to add content.
 

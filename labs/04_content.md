@@ -24,15 +24,19 @@ The information in the front matter is passed into the template before the conte
 There are predefined variables that can be used in the front matter and sometimes change the behaviour of Hugo. The most important ones are listed below, for a full list visit the [Hugo documentation](https://gohugo.io/content-management/front-matter/#front-matter-variables).
 
 **date**
+
 the datetime assigned to this page.
 
 **draft**
+
 if `true`, the content will not be rendered unless the `--buildDrafts` flag is passed to the hugo command.
 
 **title**
+
 the title for the content.
 
 **weight**
+
 used for ordering your content in lists. Lower weight gets higher precedence. So content with lower weight will come first.
 
 ### User-Defined
