@@ -1,6 +1,10 @@
 # Lab 5: Templates
 
-In the last lab we added some content. Hugo doesn't provide any default layouts and that means that content is not rendered by default.
+In the last lab we added some content. Hugo uses template files to render content (markdown) into HTML. Template files are a bridge between the content and presentation. Hugo doesn't provide any default templates, meaning that content is not rendered by default.
+
+There are three types of templates: single, list, and partial. Each type takes a bit of content as input and transforms it based on the commands in the template.
+
+TODO: describe template lookup order
 
 Layouts mainly contain HTML, but can also include variables and functions. This is called templating. All template variables and functions are accessible within `{{ }}`.
 

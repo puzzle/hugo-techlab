@@ -140,12 +140,12 @@ homepage
 ```
 Now the `index.html` exists. As you may have noticed the layout file already existed before, but it was empty. So we can conclude that empty layouts do not get rendered.
 
-In the next lab we will learn more about layouts and their contents.
+In the next lab we will learn how to add content.
 
 ---
 
 **Ende Lab 3**
 
-<p width="100px" align="right"><a href="04_templates.md">Templates →</a></p>
+<p width="100px" align="right"><a href="04_content.md">Content →</a></p>
 
 [← back to the overview](../README.md)
