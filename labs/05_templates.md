@@ -48,48 +48,123 @@ And a few more... As you may guess the site variables are global and can be acce
 
 e.g. A section template has access to the section variables, but also page and site variables.
 
+Some functions also create there own scope (e.g. using `range` to loop over pages allows you to access the relevant pages variables)
+
+For developers it is probably easiest to think of the leading `.` equivalent to `this` in programing languages.
+
 When editing the layouts you will mostly encounter [page variables](https://gohugo.io/variables/page/). The following is a small list of the most important ones:
 
-**.Content**
-
+**.Content**<br>
 the content itself, defined below the front matter.
 
-**.Title**
-
+**.Title**<br>
 the title for this page.
 
-**.Date**
-
+**.Date**<br>
 the date associated with the page; .Date pulls from the date field in a content’s front matter.
 
-**.Params**
-
+**.Params**<br>
 contains all other values defined in the front matter (e.g. `.Params.tags`).
 
-**.Permalink**
-
+**.Permalink**<br>
 the link to this page
 
 ### Functions
+
+Functions allow more complex behaviour. It is possible to conditionally render content or loop over pages. There are functions to uppercase a variable or check if a file exists. See the [Hugo docs](https://gohugo.io/functions) for a full list.
+
+**range**<br>
+TODO
+
+**eq**<br>
+TODO
+
+**ne**<br>
+TODO
+
+**isset**<br>
+TODO
+
+**where**<br>
 TODO
 
 ## Exercise: list all the labs
-TODO
+We would like to list all the labs on the homepage. For this we can use the `.Site.RegularPages` variable, that contains a list of all the pages. Edit `themes/mytheme/layouts/index.html` so it looks like this:
+```
+<h1>homepage</h1>
+
+{{ range .Site.RegularPages }}
+  <h2>
+    <a href="{{ .Permalink }}">{{ .Title }}</a>
+  </h2>
+{{ end }}
+```
+Everything surrounded by `{{ }}` is interpreted by Hugo as a template. We use the `range` function to loop over all pages. Inside the `range` block we have access to the page variables of the current page.
 
 ## Exercise
 
 Create a layout (with template variables), that renders a single lab page.
 
 <details>
+  <summary>Tip 1</summary>
+
+  Since the page is in `./content/labs` it belongs to the `labs` section.
+</details>
+
+<details>
+  <summary>Tip 2</summary>
+
+  Layouts in `./themes/mytheme/layouts/labs/` apply to the `labs` section. You can also use `./themes/mytheme/layouts/_default/`, because it is used as a default for all sections.
+</details>
+
+<details>
+  <summary>Tip 3</summary>
+
+  Since we want to render a single page, we can use `single.html`.
+</details>
+
+
+<details>
   <summary>Solution</summary>
 
-  TODO
+  Add the following content in `./themes/mytheme/layouts/_default/single.html`:
+  ```
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+  ```
 </details>
+
+You can test your solution by running `hugo serve` and clicking a link on the homepage. You should see the content of the page.
+
+<details>
+  <summary>Alternative test method</summary>
+
+  ```
+  $ rm -rf public
+
+  $ hugo
+
+  $ ls -l public/labs
+  total 12
+  drwxr-xr-x 2 lbischof lbischof 4096 Aug  4 12:52 01_quicktour
+  -rw-r--r-- 1 lbischof lbischof    5 Aug  4 12:52 index.html
+  -rw-r--r-- 1 lbischof lbischof 1104 Aug  4 12:52 index.xml
+  ```
+  We see that a new directory was created (`01_quicktour`). This directory contains a `index.html` file. This is done so that URLs are pretty (without `.html` suffix).
+</details>
+
+## Conclusion
+
+We have now created a basic website. The homepage contains a list of clickable pages. However if you view the source of the page, it doesn't contain the neccesary HTML boilerplate. (`<html><head></head><body></body></html>`)
+
+[view-source:http://localhost:1313/](view-source:http://localhost:1313/)
+
+In the next lab we will learn about template blocks and create a base layout that surrounds all layouts.
 
 ---
 
-**Ende Lab 5**
+**Ende Lab 6**
 
-<p width="100px" align="right"><a href="04_templates.md">Templates →</a></p>
+<p width="100px" align="right"><a href="06_template_blocks.md">Template Blocks →</a></p>
 
 [← back to the overview](../README.md)

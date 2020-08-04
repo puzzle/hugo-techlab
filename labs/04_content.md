@@ -23,20 +23,16 @@ The information in the front matter is passed into the template before the conte
 ### Predefined Variables
 There are predefined variables that can be used in the front matter and sometimes change the behaviour of Hugo. The most important ones are listed below, for a full list visit the [Hugo documentation](https://gohugo.io/content-management/front-matter/#front-matter-variables).
 
-**date**
-
+**date**<br>
 the datetime assigned to this page.
 
-**draft**
-
+**draft**<br>
 if `true`, the content will not be rendered unless the `--buildDrafts` flag is passed to the hugo command.
 
-**title**
-
+**title**<br>
 the title for the content.
 
-**weight**
-
+**weight**<br>
 used for ordering your content in lists. Lower weight gets higher precedence. So content with lower weight will come first.
 
 ### User-Defined
@@ -46,7 +42,7 @@ You can add fields to your front matter arbitrarily to meet your needs. These us
 Content is written in Markdown which makes it easier to create the content. Hugo runs the content through a Markdown engine to create the HTML which will be written to the output file.
 
 ## Exercise
-Create a new file in `./content/labs/` and add front matter. You can use the Markdown files from this repository.
+Create a new Markdown file (`.md`) in `./content/labs/` and add some front matter. You can use the Markdown files from this repository.
 
 <details>
   <summary>Solution</summary>
@@ -65,6 +61,18 @@ Create a new file in `./content/labs/` and add front matter. You can use the Mar
 </details>
 
 You will notice that the content is not rendered by Hugo. In the next lab we will create a template that renders the Markdown into HTML.
+
+<details>
+  <summary>Howto: check if content is rendered</summary>
+
+  Hugo does not delete old files from `./public`. If you want a clean build, then delete it first.
+  ```
+  rm -rf public
+  hugo
+  ls -l public/labs
+  ```
+  By default every section has an RSS output (see `index.xml`). But the HTML file is not generated, because there is no matching template in `./layouts`.
+</details>
 
 ---
 

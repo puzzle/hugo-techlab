@@ -22,7 +22,9 @@ The following command creates a new directory `mysite`. You can name the project
 $ hugo new site mysite
 Congratulations! Your new Hugo site is created in /home/lbischof/git/mysite.
 
-$ ls -l mysite
+$ cd mysite
+
+$ ls -l
 total 28
 drwxr-xr-x 2 lbischof lbischof 4096 Jul 30 08:46 archetypes
 -rw-r--r-- 1 lbischof lbischof   82 Jul 30 08:46 config.toml
@@ -109,7 +111,13 @@ As you can see there is still no `index.html` file. The `css` and `js` directori
 
 ## Layouts
 
-Our goal is now to create an `index.html`. For this we need to create a layout in the `themes/mytheme/layouts` directory. There are lookup rules for each page. That means that Hugo checks if specific layouts exist in a certain order. The first layout that exists will be used.
+Hugo uses template files to render content (markdown) into HTML. Template files are a bridge between the content and presentation. Hugo doesn't provide any default templates, meaning that content is not rendered by default.
+
+The terms layout and template are used interchangeably. The directory is called layouts, but the layouts also contain template variables and functions.
+
+Our goal is now to create an `index.html`. For this we need to create a file in the `themes/mytheme/layouts` directory.
+
+There are lookup rules for each page. That means that Hugo checks if specific layouts exist in a certain order. The first layout that exists will be used.
 
 There are different lookup orders for every type of page:
  - Homepage
