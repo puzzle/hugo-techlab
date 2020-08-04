@@ -141,16 +141,14 @@ You can test your solution by running `hugo serve` and clicking a link on the ho
 
   ```
   $ rm -rf public
-
   $ hugo
-
   $ ls -l public/labs
   total 12
   drwxr-xr-x 2 lbischof lbischof 4096 Aug  4 12:52 01_quicktour
   -rw-r--r-- 1 lbischof lbischof    5 Aug  4 12:52 index.html
   -rw-r--r-- 1 lbischof lbischof 1104 Aug  4 12:52 index.xml
   ```
-  We see that a new directory was created (`01_quicktour`). This directory contains a `index.html` file. This is done so that URLs are pretty (without `.html` suffix).
+  We see that a new directory was created (`01_quicktour`). This directory contains an `index.html` file. This is done so that URLs are pretty (without `.html` suffix).
 </details>
 
 ## Conclusion
@@ -163,7 +161,7 @@ In the next lab we will learn about template blocks and create a base layout tha
 
 ---
 
-**Ende Lab 6**
+**Ende Lab 5**
 
 <p width="100px" align="right"><a href="06_template_blocks.md">Template Blocks →</a></p>
 
