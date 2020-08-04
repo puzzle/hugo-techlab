@@ -111,11 +111,15 @@ As you can see there is still no `index.html` file. The `css` and `js` directori
 
 ## Layouts
 
-Hugo uses template files to render content (markdown) into HTML. Template files are a bridge between the content and presentation. Hugo doesn't provide any default templates, meaning that content is not rendered by default.
+Hugo uses template files to render content (markdown) into HTML. Template files are a bridge between the content and presentation.
+
+Without templates we would have to copy and paste the header and footer to each page. With templates we define the header and footer once and Hugo automatically includes it in every page. Templates are basically what made static sites great again.
+
+Hugo doesn't provide any default templates, meaning that content is not rendered by default.
 
 The terms layout and template are used interchangeably. The directory is called layouts, but the layouts also contain template variables and functions.
 
-Our goal is now to create an `index.html`. For this we need to create a file in the `themes/mytheme/layouts` directory.
+Our goal is now to create a homepage. For this we need to create a file in the `themes/mytheme/layouts` directory.
 
 There are lookup rules for each page. That means that Hugo checks if specific layouts exist in a certain order. The first layout that exists will be used.
 
@@ -143,7 +147,7 @@ categories  css  index.html  index.xml  js  sitemap.xml  tags
 $ cat public/index.html
 homepage
 ```
-Now the `index.html` exists. As you may have noticed the layout file already existed before, but it was empty. So we can conclude that empty layouts do not get rendered. In lab 5 we will find out how these layouts work.
+Now the `index.html` exists.
 
 In the next lab we will learn how to add content.
 
