@@ -9,7 +9,7 @@ Hugo is a fast and modern static site generator written in Go, and designed to m
 Hugo is a general-purpose website framework. Technically speaking, Hugo is a static site generator. Unlike systems that dynamically build a page with each visitor request, Hugo builds pages when you create or update your content. Since websites are viewed far more often than they are edited, Hugo is designed to provide an optimal viewing experience for your website’s end users and an ideal writing experience for website authors.
 
 ## The Benefits of Static Site Generators
-Improved performance, security and ease of use are just a few of the reasons static site generators are so appealing. See [this blog post](https://davidwalsh.name/introduction-static-site-generators) for more detailed information.
+Improved performance, security and ease of use are just a few of the reasons static site generators are so appealing. The bullet points below are from [this blog post](https://davidwalsh.name/introduction-static-site-generators).
 
 ### Speed
 Web servers are really good at delivering static pages quickly, and the entire site consists of static HTML files that are sitting on the server, waiting to be served, so a request is served back to the user pretty much instantly. There are no database queries to run, no templating and no processing whatsoever on every request.
