@@ -27,3 +27,9 @@ These techlabs serve as an introduction to Hugo. After finishing these labs you 
 ## Additional Tutorials
 
 * [Official Hugo Quick Start](https://gohugo.io/getting-started/)
+
+## Sources
+Some information and sentences are from:
+
+* https://gohugo.io
+* https://davidwalsh.name/introduction-static-site-generators
