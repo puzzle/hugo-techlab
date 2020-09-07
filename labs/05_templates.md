@@ -113,7 +113,7 @@ Filters a list of items based on a value.
 See https://gohugo.io/functions/where/ for more information.
 
 ## Exercise: list all the labs
-We would like to list all the labs on the homepage. For this we can use the `.Site.RegularPages` variable, that contains a list of all the pages. Edit `themes/mytheme/layouts/index.html` so it looks like this:
+We would like to list all the labs on the homepage. For this we can use the `.Site.RegularPages` variable, that contains a list of all the pages. Edit `themes/mytheme/layouts/index.html` so it looks like this (This file exists, but is empty. It was created with `hugo new theme`):
 ```
 <h1>homepage</h1>
 
