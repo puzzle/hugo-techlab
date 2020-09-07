@@ -36,6 +36,8 @@ drwxr-xr-x 2 lbischof lbischof 4096 Jul 30 08:46 static
 drwxr-xr-x 2 lbischof lbischof 4096 Jul 30 08:46 themes
 ```
 
+No worries, there are a lot of different directories. Everything will be explained in these labs.
+
 Now run `hugo` to build the site. The generated content is in `./public`:
 ```
 $ ls -l public
