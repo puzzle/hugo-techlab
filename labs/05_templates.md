@@ -97,7 +97,7 @@ Loops over a list of items.
 See https://gohugo.io/templates/introduction/#iteration for examples.
 
 **eq**<br>
-Compares two numbers and returs true if they are equal.
+Compares two numbers and returns true if they are equal.
 
 See https://gohugo.io/templates/introduction/#conditionals for some examples with `if`.
 
