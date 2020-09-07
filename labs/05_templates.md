@@ -2,7 +2,7 @@
 
 In the last lab we added some content. Hugo uses template files to render content (markdown) into HTML. Template files are a bridge between the content and presentation. Hugo doesn't provide any default templates, meaning that content is not rendered by default.
 
-Without templates we would have to copy and paste the header and footer to each page. With templates we define the header and footer once and     +Hugo automatically includes it in every page. Templates are basically what made static sites great again.
+Without templates we would have to copy and paste the header and footer to each page. With templates we define the header and footer once and Hugo automatically includes it in every page. Templates are basically what made static sites great again.
 
 The terms layout and template are used interchangeably. The directory is called `layouts`, but the layouts also contain template variables and functions.
 
