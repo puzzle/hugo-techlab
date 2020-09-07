@@ -77,20 +77,39 @@ the link to this page
 
 Functions allow more complex behaviour. It is possible to conditionally render content or loop over pages. There are functions to uppercase a variable or check if a file exists. See the [Hugo docs](https://gohugo.io/functions) for a full list.
 
+Functions have the basic syntax:
+
+```
+{{ function argument1 argument2 }}
+```
+This is a bit different than other languages where it would be `function(argument1, argument2)`.
+
+An example with `eq`:
+```
+{{ eq 1 2 }}
+<!-- prints false -->
+```
+
 **range**<br>
-TODO
+Loops over a list of items.
+
+See https://gohugo.io/templates/introduction/#iteration for examples.
 
 **eq**<br>
-TODO
+Compares two numbers and returs true if they are equal.
+
+See https://gohugo.io/templates/introduction/#conditionals for some examples with `if`.
 
 **ne**<br>
-TODO
+The inverse of `eq`.
 
 **isset**<br>
-TODO
+Checks if the variable is defined.
 
 **where**<br>
-TODO
+Filters a list of items based on a value.
+
+See https://gohugo.io/functions/where/ for more information.
 
 ## Exercise: list all the labs
 We would like to list all the labs on the homepage. For this we can use the `.Site.RegularPages` variable, that contains a list of all the pages. Edit `themes/mytheme/layouts/index.html` so it looks like this:
