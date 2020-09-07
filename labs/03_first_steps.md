@@ -109,7 +109,7 @@ drwxr-xr-x 2 lbischof lbischof 4096 Jul 30 09:02 js
 -rw-r--r-- 1 lbischof lbischof  355 Jul 30 09:15 sitemap.xml
 drwxr-xr-x 2 lbischof lbischof 4096 Jul 30 09:10 tags
 ```
-As you can see there is still no `index.html` file. The `css` and `js` directories were created because these exist in `themes/mytheme/static`. Everything in the `static` directory is copied directly into `./public`. This confirms that our theme is working correctly.
+As you can see there are still no HTML files. The `css` and `js` directories were created because these exist in `themes/mytheme/static`. Everything in the `static` directory is copied directly into `./public`. This confirms that our theme is working correctly.
 
 ## Layouts
 
