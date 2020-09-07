@@ -1,6 +1,6 @@
 # Lab 4: Content
 
-In the last lab we created a new site and theme. We learned about layouts and added a simple `index.html` page.
+In the last lab we created a new site and theme.
 
 Content is stored in text files that contain two sections. The first section is the "front matter," which is the meta-information on the content. The second section contains Markdown that will be converted to HTML.
 
