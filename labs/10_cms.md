@@ -50,8 +50,9 @@ collections:
 ```
 Make sure to update your own Git repository under `repo:`.
 
-
 After pushing the files the CMS should be reachable under `yoursite.netlify.app/admin`.
+
+See the [Netlify CMS documentation](https://www.netlifycms.org/docs/configuration-options/) for a full reference regarding all the different configuration options.
 
 ---
 
