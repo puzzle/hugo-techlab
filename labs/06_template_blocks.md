@@ -18,7 +18,9 @@ The theme already includes a basic base template in `layouts/_default/baseof.htm
 </html>
 ```
 
-The block keyword behaves like a function that accepts two arguments:
+We will look at the `partial` keyword in the next lab.
+
+The `block` keyword behaves like a function that accepts two arguments:
 1. the name of the block
 2. the current variable scope (`.`) so it is available inside the block
 
