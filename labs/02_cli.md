@@ -8,7 +8,9 @@ As the client is written in Go, you can run the single binary on the following O
 
 ## Download `hugo`
 
-The easiest way to install Hugo is by [downloading the binary from Github](https://github.com/gohugoio/hugo/releases) and moving it into `~/bin`. However there are also [other ways of installing Hugo](https://gohugo.io/getting-started/installing).
+The easiest way to install Hugo is by [downloading the binary from Github](https://github.com/gohugoio/hugo/releases) and moving it into `~/bin`. Pick the release for your operating system. You probably have 64bit.
+
+However there are also [other ways of installing Hugo](https://gohugo.io/getting-started/installing).
 
 ### Set the the right file modes on Linux and MacOS
 
@@ -48,6 +50,13 @@ If you don't see a similar out, possibly there are issues with the set PATH vari
 
 ## bash completion (optional)
 
+On most linux systems you have to install the bash-completion packet to make the completion work.
+
+Ubuntu:
+```
+sudo apt install bash-completion
+```
+
 Activate bash completion by running the following command:
 ```
 $ sudo hugo gen autocomplete
@@ -55,12 +64,6 @@ $ sudo hugo gen autocomplete
 
 zsh is currently not supported.
 
-On most linux systems you have to install the bash-completion packet to make the completion work.
-
-Ubuntu:
-```
-sudo apt install bash-completion
-```
 
 ---
 

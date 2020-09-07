@@ -19,6 +19,7 @@ As a fallback the repository can be downloaded as a [zip file](https://github.co
 
 The following command creates a new directory `mysite`. You can name the project however you like.
 ```
+$ cd [Git Repo Project Folder]
 $ hugo new site mysite
 Congratulations! Your new Hugo site is created in /home/lbischof/git/mysite.
 
