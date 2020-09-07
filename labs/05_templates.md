@@ -35,7 +35,7 @@ The lookup order for the labs section is:
 The lookup order for a regular page (in the labs section):
 
 - layouts/labs/single.html
-- layouts_default/single.html
+- layouts/_default/single.html
 
 These lists have been shortened. To find out more about Hugo's lookup order, see the [official docs](https://gohugo.io/templates/lookup-order/)
 
