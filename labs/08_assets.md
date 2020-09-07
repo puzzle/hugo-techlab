@@ -59,6 +59,6 @@ content/
 
 **Ende Lab 8**
 
-<p width="100px" align="right"><a href="08_assets.md">Assets →</a></p>
+<p width="100px" align="right"><a href="09_deployment.md">Deployment →</a></p>
 
 [← back to the overview](../README.md)

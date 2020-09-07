@@ -13,6 +13,7 @@ Netlify works by connecting with a public Git repository. Create a Git repositor
 cd mysite
 git init
 git remote add origin [git clone url]
+git add .
 git commit "Initial Commit"
 git push
 ```
