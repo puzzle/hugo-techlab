@@ -10,7 +10,7 @@ The goal of this lab is to render our content (e.g. `content/labs/01_quicktour.m
 
 There are three types of templates: single, list, and partial. Each type takes a bit of content as input and transforms it based on the commands in the template.
 
-There are different lookup orders for every type of page:
+There are different types of pages:
 - Homepage
 - Section pages (list template)
 - Regular pages (single template)
@@ -20,7 +20,7 @@ There are different lookup orders for every type of page:
 A section page is a list of regular pages in a specific section. In our example (`content/labs/01_quicktour.md`) the section is `labs` and all files inside this directory are regular pages.
 
 ## Lookup order
-There are lookup rules for each page. That means that Hugo checks if specific layout exists. If it doesn't exist then Hugo searches for the next layout (in the lookup order). The first layout that exists will be used.
+There are lookup rules for each page type. That means that Hugo checks if a specific layout exists. If it doesn't exist then Hugo searches for the next layout (in the lookup order). The first layout that exists will be used.
 
 The lookup order for the Homepage is (first file found will be used):
 
