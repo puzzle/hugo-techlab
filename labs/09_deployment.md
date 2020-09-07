@@ -10,7 +10,7 @@ cd mysite
 git init
 git remote add origin [git clone url]
 git add .
-git commit "Initial Commit"
+git commit -m "Initial Commit"
 git push
 ```
 
