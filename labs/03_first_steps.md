@@ -117,39 +117,7 @@ Without templates we would have to copy and paste the header and footer to each 
 
 Hugo doesn't provide any default templates, meaning that content is not rendered by default.
 
-The terms layout and template are used interchangeably. The directory is called layouts, but the layouts also contain template variables and functions.
-
-Our goal is now to create a homepage. For this we need to create a file in the `themes/mytheme/layouts` directory.
-
-There are lookup rules for each page. That means that Hugo checks if specific layouts exist in a certain order. The first layout that exists will be used.
-
-There are different lookup orders for every type of page:
- - Homepage
- - Regular pages
- - Section pages
- - Taxonomy pages (tags, categories)
- - Term pages (a single tag)
-
-The lookup order for the Homepage is (first file found will be used):
- - layouts/index.html
- - layouts/_default/list.html
-
-This list is shortened. To find out more about Hugo's lookup order, see the [official docs](https://gohugo.io/templates/lookup-order/).
-
-We can now edit `themes/mytheme/layouts/index.html` and insert some text (e.g. `homepage`).
-Rebuild the website and check the output:
-```
-$ hugo
-
-$ ls public
-categories  css  index.html  index.xml  js  sitemap.xml  tags
-
-$ cat public/index.html
-homepage
-```
-Now the `index.html` exists.
-
-In the next lab we will learn how to add content.
+In lab 5 we will create templates, but first we will learn how to add content.
 
 ---
 

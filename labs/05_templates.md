@@ -2,16 +2,20 @@
 
 In the last lab we added some content. Hugo uses template files to render content (markdown) into HTML. Template files are a bridge between the content and presentation. Hugo doesn't provide any default templates, meaning that content is not rendered by default.
 
+Without templates we would have to copy and paste the header and footer to each page. With templates we define the header and footer once and     +Hugo automatically includes it in every page. Templates are basically what made static sites great again.
+
 The terms layout and template are used interchangeably. The directory is called `layouts`, but the layouts also contain template variables and functions.
 
 The goal of this lab is to render our content (e.g. `content/labs/01_quicktour.md`) to HTML.
 
 There are three types of templates: single, list, and partial. Each type takes a bit of content as input and transforms it based on the commands in the template.
 
-In this lab we will be be focussing on the following templates:
+There are different lookup orders for every type of page:
 - Homepage
 - Section pages (list template)
 - Regular pages (single template)
+- Taxonomy pages (tags, categories)
+- Term pages (a single tag)
 
 A section page is a list of regular pages in a specific section. In our example (`content/labs/01_quicktour.md`) the section is `labs` and all files inside this directory are regular pages.
 
