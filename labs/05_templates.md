@@ -42,7 +42,8 @@ These lists have been shortened. To find out more about Hugo's lookup order, see
 ## Basic Syntax
 
 ### Variables
-Accessing variables is easy. The hard part is knowing which variables are available. In Hugo there are different variable scopes:
+
+Accessing variables is easy: `{{ .Variable }}`. The hard part is knowing which variables are available. In Hugo there are different variable scopes:
  - [Site variables](https://gohugo.io/variables/site/)
  - [Page variables](https://gohugo.io/variables/page/)
  - [Section variables](https://gohugo.io/variables/page/#section-variables-and-methods)
