@@ -33,6 +33,6 @@ baseURL = "https://eager-cray-50c194.netlify.app"
 
 **Ende Lab 9**
 
-<!--<p width="100px" align="right"><a href="08_assets.md">Assets →</a></p>-->
+<p width="100px" align="right"><a href="10_cms.md">Netlify CMS →</a></p>
 
 [← back to the overview](../README.md)
