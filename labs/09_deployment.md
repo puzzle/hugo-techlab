@@ -2,10 +2,6 @@
 
 Now we will deploy our small website to Netlify.
 
-## Register Netlify Account
-
-You will have to create an account on netlify.com.
-
 ## Version Control
 
 Netlify works by connecting with a public Git repository. Create a Git repository on github.com, gitlab.com or bitbucket.com and push your files:
@@ -17,6 +13,10 @@ git add .
 git commit "Initial Commit"
 git push
 ```
+
+## Register Netlify Account
+
+You will have to create an account on netlify.com.
 
 ## Create a new site on Netlify
 
