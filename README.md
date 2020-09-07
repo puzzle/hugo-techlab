@@ -14,6 +14,7 @@ These techlabs serve as an introduction to Hugo. After finishing these labs you 
 1. [Template Blocks](labs/06_template_blocks.md)
 1. [Partials](labs/07_partials.md)
 1. [Assets](labs/08_assets.md)
+1. [Deployment](labs/09_deployment.md)
 
 ## Additional Labs
 
