@@ -42,7 +42,9 @@ You can add fields to your front matter arbitrarily to meet your needs. These us
 Content is written in Markdown which makes it easier to create the content. Hugo runs the content through a Markdown engine to create the HTML which will be written to the output file.
 
 ## Exercise
-Create a new Markdown file (`.md`) in `./content/labs/` and add some front matter (e.g. a `title`). You can use the Markdown files from this repository.
+Create a new Markdown file (`.md`) in `./content/labs/` and add some front matter (e.g. a `title`) and content. You can use the Markdown files from this repository.
+
+You can expand the solution below if you need help.
 
 <details>
   <summary>Solution</summary>
