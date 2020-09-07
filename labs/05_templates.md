@@ -14,8 +14,8 @@ There are different types of pages:
 - Homepage
 - Section pages (list template)
 - Regular pages (single template)
-- Taxonomy pages (tags, categories)
-- Term pages (a single tag)
+- Taxonomy pages (tags, categories. also list template)
+- Term pages (a single tag. single template)
 
 A section page is a list of regular pages in a specific section. In our example (`content/labs/01_quicktour.md`) the section is `labs` and all files inside this directory are regular pages.
 
