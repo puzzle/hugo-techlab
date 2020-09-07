@@ -5,6 +5,8 @@
 
 Use [these instructions](https://docs.netlify.com/visitor-access/oauth-provider-tokens/#setup-and-settings) and create an Oauth Application on Github. This will be used later so that Netlify CMS can push content updates to your repository.
 
+You only need to follow the instructions until you have saved the Client ID and Client Secret.
+
 ## Install the CMS
 Now we need to add the CMS to our website.
 
