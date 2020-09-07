@@ -22,6 +22,13 @@ You will have to create an account on netlify.com.
 
 Login to netlify.com and click "New site from Git".
 
+Follow the instructions to create a Github App.
+
+Edit `config.toml` and add your Netlify URL:
+```
+baseURL = "https://eager-cray-50c194.netlify.app"
+```
+
 ---
 
 **Ende Lab 9**
