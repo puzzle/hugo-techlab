@@ -4,7 +4,7 @@ Now we will deploy our small website to Netlify.
 
 ## Version Control
 
-Netlify works by connecting with a public Git repository. Create a Git repository on github.com, gitlab.com or bitbucket.com and push your files:
+Netlify works by connecting with a Git repository. Create a Git repository on github.com (may be private) and push your files:
 ```
 cd mysite
 git init
