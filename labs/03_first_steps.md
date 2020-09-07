@@ -59,6 +59,7 @@ Since the goal of this lab is to show you how themes work, we will create our ow
 
 The following command creates a skeleton theme:
 ```
+$ cd mysite
 $ hugo new theme mytheme
 Creating theme at /home/lbischof/git/mysite/themes/mytheme
 
