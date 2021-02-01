@@ -36,7 +36,14 @@ drwxr-xr-x 2 lbischof lbischof 4096 Jul 30 08:46 static
 drwxr-xr-x 2 lbischof lbischof 4096 Jul 30 08:46 themes
 ```
 
-No worries, there are a lot of different directories. Everything will be explained in these labs.
+The following files and directories were created:
+- `archetypes/` contains templates for creating new content. Try running `hugo new labs/some-new-lab.md`.
+- `config.toml` is the configuration file for Hugo.
+- `content/` contains all the content in Markdown format. Explained in [Lab 04](04_content.md).
+- `data/` may contain additional data files in Yaml or JSON format. See the [Hugo docs](https://gohugo.io/templates/data-templates/#the-data-folder) for more information.
+- `layouts/` define how the Markdown files are converted to HTML. Explained in [Lab 05](05_templates.md)
+- `static/` is copied, without any changes. A file `static/example.jpg` is later accessible at `http://localhost:1313/example.jpg`.
+- `themes/` is described below.
 
 Now run `hugo` to build the site. The generated content is in `./public`:
 ```
@@ -73,6 +80,22 @@ drwxr-xr-x 4 lbischof lbischof 4096 Jul 30 09:02 layouts
 drwxr-xr-x 4 lbischof lbischof 4096 Jul 30 09:02 static
 -rw-r--r-- 1 lbischof lbischof  435 Jul 30 09:02 theme.toml
 ```
+You might notice, that these directories are the same as above (main directory). This is not a coincidence. The same directories can be used at both places. If there are conflicts (same file names), the theme file is overwritten:
+
+<pre>
+.
+├── <b>layouts</b>
+│   └── labs
+│       └── <b>single.html</b>
+└── themes
+    └── mytheme
+        └── <b>layouts</b>
+            └── labs
+                ├── list.html
+                └── <b>single.html</b>
+</pre>
+In the above example, we overwrite `single.html` outside of the theme. This can be really useful, if we downloaded the theme from Github.
+
 Note that the skeleton's template files are empty. Don't worry, we'll be changing that shortly.
 ```
 $ find themes/mytheme -name '*.html' | xargs ls -l
