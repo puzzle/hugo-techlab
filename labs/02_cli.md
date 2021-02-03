@@ -21,15 +21,6 @@ cd ~/bin
 chmod +x hugo
 ```
 
-### `hugo` in PATH variable
-
-In **Linux** and **Mac OS X** the directory `~/bin` should already be part of the PATH variable.
-In case `hugo` is placed in a different directory, you can change the PATH with the following command:
-
-```
-$ export PATH=$PATH:[path to hugo]
-```
-
 ## Verify installation
 
 The `hugo` binary should now be correctly installed. Check by running the following command:
@@ -44,7 +35,13 @@ The shown output should look similar to this:
 Hugo Static Site Generator v0.74.2 linux/amd64 BuildDate: unknown
 ```
 
-If you don't see a similar out, possibly there are issues with the set PATH variable.
+If you don't see a similar output, possibly there are issues with the set PATH variable. Try moving Hugo to `/usr/local/bin`:
+
+```
+sudo mv hugo /usr/local/bin
+```
+If that still does not work check `echo $PATH` or run with `./hugo`.
+
 
 ---
 
