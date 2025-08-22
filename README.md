@@ -1,8 +1,13 @@
 # Hugo Techlab
 
+
 UNDER CONSTRUCTION
 
 These techlabs serve as an introduction to Hugo. After finishing these labs you will be able to create a small website and deploy it.
+
+## Techlab last given
+
+Febuary 2021
 
 ## Table of contents
 
